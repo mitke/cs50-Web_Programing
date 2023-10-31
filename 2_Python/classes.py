@@ -14,11 +14,10 @@ class Flight():
   
 flight_853 = Flight(3)
 
-people = ["Herry", "Ron", "Hermione", "Ginny"]
+people = ["Herry", "Ron", "Hermione", "Ginny", "Mile", "Žile"]
 
 for person in people:
-  success = flight_853.add_passenger(person)
-  if success:
+  if flight_853.add_passenger(person):
     print(f"Added {person} to flight 853 successfully")
   else:
     print(f"No available seats for {person}")

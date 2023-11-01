@@ -7,7 +7,13 @@ movies = [
     {"title": "12 Years a Slave", "year": 2013}
 ]
 
-movies.sort(key=lambda movie: movie["year"])
+#movies.sort(key=lambda x: x["year"])
 
-for movie in movies:
-    print("'{title}' was released in {year}".format(**movie))
+#for movie in movies:
+#    print("'{title}' was released in {year}".format(**movie))
+
+sorted_movies = sorted(movies, key=lambda x: x["year"])
+
+for _ in range(len(sorted_movies)):
+    print(f"{sorted_movies[_]['title']} was released in {sorted_movies[_]['year']}")
+#print(sorted_movies[2]["title"])

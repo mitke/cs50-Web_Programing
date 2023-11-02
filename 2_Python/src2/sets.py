@@ -9,5 +9,5 @@ s.add(3)
 print(s)
 
 # Remove elemnt from set
-s.remove(3)
+s.remove(5)
 print(s)

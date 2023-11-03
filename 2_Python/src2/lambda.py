@@ -7,7 +7,7 @@ movies = [
     {"title": "12 Years a Slave", "year": 2013}
 ]
 
-movies.sort(key=lambda movie: movie["year"])
+movies.sort(key=lambda movie: movie["year"]) 
 
 for movie in movies:
-    print("{title} was released in {year}".format(**movie))
+    print("'{title}' was released in {year}".format(**movie))
